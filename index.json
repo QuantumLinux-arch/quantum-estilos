@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T21:42Z",
+  "updated": "2026-11-19T21:43Z",
   "estilos": [
     {
       "id": "cristal-de-aurora",
@@ -10,7 +10,7 @@
       "shell": "aurora",
       "accent": "#7B9CFF",
       "likes": 0,
-      "issue": null,
+      "issue": 3,
       "added": "2026-11-19",
       "estilo": "estilos/cristal-de-aurora/estilo.json",
       "captura": "estilos/cristal-de-aurora/captura.jpg"
@@ -23,7 +23,7 @@
       "shell": "caelestial",
       "accent": "#FF2D55",
       "likes": 0,
-      "issue": null,
+      "issue": 4,
       "added": "2026-11-19",
       "estilo": "estilos/modo-torneo/estilo.json",
       "captura": "estilos/modo-torneo/captura.jpg"
@@ -36,7 +36,7 @@
       "shell": "nimbus",
       "accent": "#5CE1B9",
       "likes": 0,
-      "issue": null,
+      "issue": 1,
       "added": "2026-11-19",
       "estilo": "estilos/nube-menta/estilo.json",
       "captura": "estilos/nube-menta/captura.jpg"
@@ -49,7 +49,7 @@
       "shell": "serpantium",
       "accent": "#F5A6C9",
       "likes": 0,
-      "issue": null,
+      "issue": 2,
       "added": "2026-11-19",
       "estilo": "estilos/rosa-nocturno/estilo.json",
       "captura": "estilos/rosa-nocturno/captura.jpg"
