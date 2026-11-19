@@ -1,0 +1,19 @@
+{
+  "name": "Cristal de Aurora",
+  "description": "Aurora con dock de cristal azul y los botones de las ventanas a la izquierda.",
+  "author": "Equipo Quantum",
+  "shell": "aurora",
+  "settings": {
+    "appearance": {
+      "mode": "dark",
+      "accent": "#7B9CFF",
+      "panelOpacity": 0.82,
+      "blur": true
+    },
+    "windows": {
+      "corners": "round",
+      "buttonsLeft": true,
+      "animations": "smooth"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "updated": "2026-11-19T21:41Z",
+  "estilos": [
+    {
+      "id": "cristal-de-aurora",
+      "name": "Cristal de Aurora",
+      "description": "Aurora con dock de cristal azul y los botones de las ventanas a la izquierda.",
+      "author": "Equipo Quantum",
+      "shell": "aurora",
+      "accent": "#7B9CFF",
+      "likes": 0,
+      "issue": null,
+      "added": "2026-11-19",
+      "estilo": "estilos/cristal-de-aurora/estilo.json",
+      "captura": "estilos/cristal-de-aurora/captura.jpg"
+    },
+    {
+      "id": "modo-torneo",
+      "name": "Modo torneo",
+      "description": "Caelestial rojo y rápido: sin desenfoque, esquinas rectas y animación de fuego.",
+      "author": "Equipo Quantum",
+      "shell": "caelestial",
+      "accent": "#FF2D55",
+      "likes": 0,
+      "issue": null,
+      "added": "2026-11-19",
+      "estilo": "estilos/modo-torneo/estilo.json",
+      "captura": "estilos/modo-torneo/captura.jpg"
+    },
+    {
+      "id": "nube-menta",
+      "name": "Nube menta",
+      "description": "Nimbus con verde agua: píldoras flotantes, esquinas redondas y animaciones suaves.",
+      "author": "Equipo Quantum",
+      "shell": "nimbus",
+      "accent": "#5CE1B9",
+      "likes": 0,
+      "issue": null,
+      "added": "2026-11-19",
+      "estilo": "estilos/nube-menta/estilo.json",
+      "captura": "estilos/nube-menta/captura.jpg"
+    },
+    {
+      "id": "rosa-nocturno",
+      "name": "Rosa nocturno",
+      "description": "Serpantium en rosa: barra de píldoras y paneles oscuros, para la noche.",
+      "author": "Equipo Quantum",
+      "shell": "serpantium",
+      "accent": "#F5A6C9",
+      "likes": 0,
+      "issue": null,
+      "added": "2026-11-19",
+      "estilo": "estilos/rosa-nocturno/estilo.json",
+      "captura": "estilos/rosa-nocturno/captura.jpg"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+# Galería de estilos: al ponerle la etiqueta «aprobado» a un issue «Subir un estilo», el estilo pasa a estilos/;
+# y cada día (o con cada cambio) se rearma index.json con los «me gusta» (👍 del issue de cada estilo).
+name: Galería
+
+on:
+  issues:
+    types: [labeled]
+  push:
+    branches: [main]
+    paths: ["estilos/**", "scripts/**"]
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: galeria
+  cancel-in-progress: false
+
+jobs:
+  galeria:
+    if: github.event_name != 'issues' || (github.event.label.name == 'aprobado' && contains(github.event.issue.labels.*.name, 'nuevo-estilo'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - name: Aprobar el estilo
+        id: aprobar
+        if: github.event_name == 'issues'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUMERO: ${{ github.event.issue.number }}
+        run: |
+          set -o pipefail
+          if slug=$(python scripts/galeria.py aprobar "$NUMERO" 2>err.txt); then
+            echo "slug=$slug" >> "$GITHUB_OUTPUT"
+          else
+            gh issue comment "$NUMERO" --repo "$GITHUB_REPOSITORY" --body "No se pudo agregar el estilo: $(cat err.txt | tail -1)"
+            exit 1
+          fi
+      - name: Rearmar el índice
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/galeria.py index
+      - name: Guardar
+        run: |
+          git config user.name "Galería de Quantum"
+          git config user.email "345054360+QuantumLinux-arch@users.noreply.github.com"
+          git add -A estilos index.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Galería: ${{ steps.aprobar.outputs.slug || 'me gusta al día' }}"
+            git push
+          fi
+      - name: Avisar en el issue
+        if: steps.aprobar.outputs.slug != ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUMERO: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$NUMERO" --repo "$GITHUB_REPOSITORY" --body "¡Listo! Tu estilo ya está en la galería de Quantum (Personalizar → Estilos). Cada 👍 en este issue es un «me gusta»."
+          gh issue close "$NUMERO" --repo "$GITHUB_REPOSITORY" --reason completed

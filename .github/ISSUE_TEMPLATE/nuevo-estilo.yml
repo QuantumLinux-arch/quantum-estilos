@@ -1,0 +1,46 @@
+name: Subir un estilo
+description: Comparte tu estilo de Quantum Linux con la comunidad (desde Personalizar → Estilos → «Subir a la galería» se llena solo)
+title: "Estilo: "
+labels: ["nuevo-estilo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por compartir tu estilo! Cuando el equipo lo revise y le ponga la etiqueta **aprobado**, aparece solo en la galería de Personalizar.
+        Los 👍 que reciba este issue son los «me gusta» del estilo en la galería.
+  - type: input
+    id: nombre
+    attributes:
+      label: Nombre del estilo
+      placeholder: "Por ejemplo: Noche de neón"
+    validations:
+      required: true
+  - type: input
+    id: autor
+    attributes:
+      label: Tu nombre o apodo
+      description: Así aparece en la galería (puede ser tu apodo del Discord)
+    validations:
+      required: true
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción
+      description: Una o dos frases sobre tu estilo
+    validations:
+      required: true
+  - type: textarea
+    id: estilo
+    attributes:
+      label: Estilo
+      description: El código de tu estilo (Quantum lo pega solo). Si lo exportaste a un archivo, pega aquí su contenido.
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: captura
+    attributes:
+      label: Captura
+      description: Arrastra aquí la captura de tu escritorio (Quantum la guarda en Imágenes al tocar «Subir a la galería»)
+    validations:
+      required: true

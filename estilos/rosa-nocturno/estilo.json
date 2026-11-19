@@ -1,0 +1,17 @@
+{
+  "name": "Rosa nocturno",
+  "description": "Serpantium en rosa: barra de píldoras y paneles oscuros, para la noche.",
+  "author": "Equipo Quantum",
+  "shell": "serpantium",
+  "settings": {
+    "appearance": {
+      "mode": "dark",
+      "accent": "#F5A6C9",
+      "panelOpacity": 0.92
+    },
+    "windows": {
+      "corners": "soft",
+      "animations": "normal"
+    }
+  }
+}

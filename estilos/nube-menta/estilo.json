@@ -1,0 +1,19 @@
+{
+  "name": "Nube menta",
+  "description": "Nimbus con verde agua: píldoras flotantes, esquinas redondas y animaciones suaves.",
+  "author": "Equipo Quantum",
+  "shell": "nimbus",
+  "settings": {
+    "appearance": {
+      "mode": "dark",
+      "accent": "#5CE1B9",
+      "panelOpacity": 0.9,
+      "blur": true
+    },
+    "windows": {
+      "corners": "round",
+      "animations": "smooth",
+      "openAnimation": "zoom"
+    }
+  }
+}
