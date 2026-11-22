@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updated": "2026-11-21T14:44Z",
+  "updated": "2026-11-22T14:40Z",
   "estilos": [
+    {
+      "id": "modo-torneo",
+      "name": "Modo torneo",
+      "description": "Caelestial rojo y rápido: sin desenfoque, esquinas rectas y animación de fuego.",
+      "author": "Equipo Quantum",
+      "shell": "caelestial",
+      "accent": "#FF2D55",
+      "likes": 1,
+      "issue": 4,
+      "added": "2026-11-19",
+      "estilo": "estilos/modo-torneo/estilo.json",
+      "captura": "estilos/modo-torneo/captura.jpg"
+    },
     {
       "id": "rosa-nocturno",
       "name": "Rosa nocturno",
@@ -27,19 +40,6 @@
       "added": "2026-11-19",
       "estilo": "estilos/cristal-de-aurora/estilo.json",
       "captura": "estilos/cristal-de-aurora/captura.jpg"
-    },
-    {
-      "id": "modo-torneo",
-      "name": "Modo torneo",
-      "description": "Caelestial rojo y rápido: sin desenfoque, esquinas rectas y animación de fuego.",
-      "author": "Equipo Quantum",
-      "shell": "caelestial",
-      "accent": "#FF2D55",
-      "likes": 0,
-      "issue": 4,
-      "added": "2026-11-19",
-      "estilo": "estilos/modo-torneo/estilo.json",
-      "captura": "estilos/modo-torneo/captura.jpg"
     },
     {
       "id": "nube-menta",
