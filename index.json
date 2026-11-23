@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updated": "2026-11-22T14:40Z",
+  "updated": "2026-11-23T18:22Z",
   "estilos": [
+    {
+      "id": "rosa-nocturno",
+      "name": "Rosa nocturno",
+      "description": "Serpantium en rosa: barra de píldoras y paneles oscuros, para la noche.",
+      "author": "Equipo Quantum",
+      "shell": "serpantium",
+      "accent": "#F5A6C9",
+      "likes": 2,
+      "issue": 2,
+      "added": "2026-11-19",
+      "estilo": "estilos/rosa-nocturno/estilo.json",
+      "captura": "estilos/rosa-nocturno/captura.jpg"
+    },
     {
       "id": "modo-torneo",
       "name": "Modo torneo",
@@ -14,19 +27,6 @@
       "added": "2026-11-19",
       "estilo": "estilos/modo-torneo/estilo.json",
       "captura": "estilos/modo-torneo/captura.jpg"
-    },
-    {
-      "id": "rosa-nocturno",
-      "name": "Rosa nocturno",
-      "description": "Serpantium en rosa: barra de píldoras y paneles oscuros, para la noche.",
-      "author": "Equipo Quantum",
-      "shell": "serpantium",
-      "accent": "#F5A6C9",
-      "likes": 1,
-      "issue": 2,
-      "added": "2026-11-19",
-      "estilo": "estilos/rosa-nocturno/estilo.json",
-      "captura": "estilos/rosa-nocturno/captura.jpg"
     },
     {
       "id": "cristal-de-aurora",
