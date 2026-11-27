@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-26T17:00Z",
+  "updated": "2026-11-27T16:46Z",
   "estilos": [
     {
       "id": "rosa-nocturno",
@@ -9,7 +9,7 @@
       "author": "Equipo Quantum",
       "shell": "serpantium",
       "accent": "#F5A6C9",
-      "likes": 2,
+      "likes": 3,
       "issue": 2,
       "added": "2026-11-19",
       "estilo": "estilos/rosa-nocturno/estilo.json",
